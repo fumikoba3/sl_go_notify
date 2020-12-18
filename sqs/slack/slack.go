@@ -14,14 +14,14 @@ type slackParams struct {
 	UserName  string `json:"username"`
 	Channel   string `json:"channel"`
 	IconEmoji string `json:"icon_emoji"`
-	IconUrl   string `json:"icon_url"`
+	// IconUrl   string `json:"icon_url"`
 }
 
 func createParam(message string, channelName string) slackParams {
 
 	username := os.Getenv("userName")
 	iconEmoji := os.Getenv("iconEmoji")
-	iconUrl := os.Getenv("iconUrl")
+	// iconUrl := os.Getenv("iconUrl")
 	//iconEmoji<iconUrl
 	//faultlineは以下url
 	//TODO https://faultline.github.io/faultline/icon.png'
